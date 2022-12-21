@@ -1,10 +1,1 @@
-# 关于
-本图档从一些大佬的icons库搬运自用，若不弃，还请关注设计原作者GitHub！
-   
-# 感谢
-
-[@Koolson](https://github.com/Koolson)
-
-[@Orz-3](https://github.com/Orz-3)
-
-[@deezertidal](https://github.com/deezertidal)
+# deezertidal/privite/icons.json中的图标均来自Koolson的Qure，本人仅添加几个图标以自用
