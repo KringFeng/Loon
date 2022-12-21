@@ -1,0 +1,9 @@
+#!name=音频剪辑
+#!desc=音频剪辑解锁会员
+#!homepage=https://github.com/KringFeng
+#!author=彭于晏💞89996462
+#!icon=https://raw.githubusercontent.com/KringFeng/Loon/Master/icons/ypjj.png
+[MITM]
+hostname = buy.itunes.apple.com
+[Script]
+http-response ^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt requires-body=1,script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/ypjj.js

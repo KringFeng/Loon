@@ -1,0 +1,11 @@
+#!name=FT中文网
+#!desc=FT中文网pro
+#!homepage=https://github.com/KringFeng
+#!author=ddgksf2013
+#!icon=https://raw.githubusercontent.com/KringFeng/Loon/Master/icons/ft.png
+
+[Script]
+http-response ^https?:\/\/user\.ftmailbox\.cn\/ios-receipt-validation\.php.* requires-body=1,script-path=https://ocd0522.tk/ddgksf2013/Cuttlefish/raw/branch/master/Crack/ftchinese.js
+
+[MITM]
+hostname=user.ftmailbox.cn

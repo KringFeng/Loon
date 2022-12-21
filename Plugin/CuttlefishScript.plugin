@@ -1,0 +1,31 @@
+#!name=CuttlefishScript
+#!desc=墨鱼脚本合辑
+#!homepage=https://github.com/KringFeng
+#!author=ddgksf2013
+#!icon=https://raw.githubusercontent.com/KringFeng/Loon/Master/icons/robot.png
+
+[Script]
+# FileBall挂载阿里云盘、Alist;教程参考（https://ocd0522.tk/ddgksf2013/Cuttlefish/src/branch/master/Script/ali.js）
+http-response ^https?:\/\/.*\.example\.com requires-body=1, script-path=https://ocd0522.tk/ddgksf2013/Cuttlefish/raw/branch/master/Script/ali.js
+# 阿里云盘优化首页Display
+http-response ^https?:\/\/api\.aliyundrive\.com\/apps\/v\d\/users\/apps\/widgets$ requires-body=1, script-path=https://ocd0522.tk/ddgksf2013/Cuttlefish/raw/branch/master/Script/alidrive.js
+# -豆瓣电影移动版网页增强-快捷跳转 茶杯狐 搜索- 展示在映流媒体平台- 快捷收藏电影至 Airtable- 豆瓣移动版网页去广告
+http-response ^https://m.douban.com/movie/subject/.+ requires-body=1, script-path=https://ocd0522.tk/ddgksf2013/Cuttlefish/raw/branch/master/Script/douban.js,tag=茶杯狐搜索
+http-request ^https://m.douban.com/movie/subject/.+\?seen=\d script-path=https://ocd0522.tk/ddgksf2013/Cuttlefish/raw/branch/master/Script/douban.js,tag=Airtable收藏
+# 京东搜索页面优化
+http-response ^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=hotWords requires-body=1, script-path=https://ocd0522.tk/ddgksf2013/Cuttlefish/raw/branch/master/Script/jd_json.js
+http-response ^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=hotSearchTerms requires-body=1, script-path=https://ocd0522.tk/ddgksf2013/Cuttlefish/raw/branch/master/Script/jd_json.js
+# 顺丰速运
+http-response ^https://ccsp-egmas.sf-express.com/cx-app-base/base/app/ad/queryInfoFlow requires-body=1, script-path=https://ocd0522.tk/ddgksf2013/Cuttlefish/raw/branch/master/Script/shunfeng_json.js
+# Stay去除仓库广告
+http-response ^https?:\/\/api\.shenyin\.name\/stay-fork\/browse\/featured$ requires-body=1, script-path=https://ocd0522.tk/ddgksf2013/Cuttlefish/raw/branch/master/Script/stay.js
+# Not Boring 四件套[天气、习惯、日历、时间] 解锁会员权限
+^https?:\/\/api-weather\.andy\.works\/v\d\/\w{13,18}$ url reject-dict
+http-response ^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/*) requires-body=1, script-path=https://ocd0522.tk/ddgksf2013/Cuttlefish/raw/branch/master/Crack/notboring.js
+# 掌上公交微信小程序去除广告
+http-response ^https?:\/\/wx\.mygolbs\.com\/WxBusServer\/ApiData\.do requires-body=1, script-path=https://ocd0522.tk/ddgksf2013/Cuttlefish/raw/branch/master/Crack/zhangshanggongjiao.js
+# 小打卡(微信小程序)解鎖會員權限
+http-response ^https?:\/\/uranus\.sharedaka\.com\/api\/v3\/user\/info\/get requires-body=1, script-path=https://ocd0522.tk/ddgksf2013/Cuttlefish/raw/branch/master/Crack/xiaodaka.js
+
+[MITM]
+hostname = *example.com, api.aliyundrive.com, m.douban.com, api.m.jd.com, ccsp-egmas.sf-express.com, api.shenyin.name, api-weather.andy.works,api.revenuecat.com, wx.mygolbs.com, uranus.sharedaka.com

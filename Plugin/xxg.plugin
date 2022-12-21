@@ -1,0 +1,11 @@
+#!name=小习惯
+#!desc=小习惯解锁会员
+#!homepage=https://github.com/KringFeng
+#!author=墨鱼@ddgksf2013
+#!icon=https://raw.githubusercontent.com/KringFeng/Loon.Master/icons/xxg.png
+
+[Script]
+http-response ^https://xianbeikeji.com/daily/app/user/query requires-body=1,script-path=Https://raw.githubusercontent.com/KringFeng/Loon/Master/js-backup/Crack/mzjz.js
+
+[MITM]
+hostname = xianbeikeji.com

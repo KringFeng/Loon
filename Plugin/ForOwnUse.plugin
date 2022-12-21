@@ -1,0 +1,56 @@
+#!name=For OwnUse
+#!desc=墨鱼自用脚本
+#!homepage=https://github.com/KringFeng
+#!author=彭于晏💞89996462
+#!icon=https://raw.githubusercontent.com/KringFeng/Loon/Master/icons/robot.png
+
+[Script]
+# ✅ Spotify
+http-response ^https:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$ requires-body=1, script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-proto.js
+# ✅ 酷我音乐(会员共享)[vip至2023-05-07]
+http-response ^https?:\/\/.*(kuwo|lrts).*(music\.pay\?ne|\/a\.p|v\d\/api\/(user\/in|pay\/vi)|\w{3}\/v\d\/user\/vi|\w{3}\/spi\/ms|\w{3}\/v\d\/the|\w{3}\/enc\/use) requires-body=1,  script-path=https://ocd0522.tk/ddgksf2013/Cuttlefish/raw/branch/master/Script/kwyy.js
+http-request ^https?:\/\/.*(kuwo|lrts).*(music\.pay\?ui) url requires-body=0, script-path=https://ocd0522.tk/ddgksf2013/Cuttlefish/raw/branch/master/Script/kwyy.js
+# ✅ 一言(need登录)
+http-response ^https:\/\/app\.yiyan\.art\/yiyan\/ requires-body=1, script-path=https://ocd0522.tk/ddgksf2013/Cuttlefish/raw/branch/master/Crack/yiyan.js
+# ✅ 西窗烛(need登录)
+http-response ^https://lchttpapi.xczim.com/* requires-body=1,  script-path=https://ocd0522.tk/ddgksf2013/Cuttlefish/raw/branch/master/Crack/xcz.js
+
+#>>>>>>>>>>>>>>>>新闻类VIP
+# ✅ 财新周刊
+http-response ^http://ipadcms.caixin.com/tmp/articles/* requires-body=1,  https://ocd0522.tk/ddgksf2013/Cuttlefish/raw/branch/master/Crack/cxzk.js
+# ✅ 财新(会员共享)[vip至2023-06-06]
+http-response ^http-response ^https?:\/\/gateway\.caixin\.com\/api\/app\-api\/auth\/(validate|validateAudioAuth) requires-body=0, script-path=https://raw.githubusercontent.com/I-am-R-E/Functional-Store-Hub/Master/CaiXin/Script/CaiXin.js
+
+#>>>>>>>>>>>>>>>>图影类VIP
+# ✅ Fimo(need登录)
+http-response ^https://server.yoyiapp.com/fimo-user/user$ requires-body=1,  script-path=https://ocd0522.tk/ddgksf2013/Cuttlefish/raw/branch/master/Crack/fimo.js
+# ✅ 傲软抠图(need登录)
+hhttp-response ^ttps?:\/\/.*\.aoscdn\.com\/base\/vip\/client\/authorizations$ requires-body=1, script-path=https://ocd0522.tk/ddgksf2013/Cuttlefish/raw/branch/master/Crack/apowersoft.js
+# ✅ 美图秀秀(need登录)
+http-response ^https?:\/\/(h5|api)\.xiuxiu\.meitu\.com\/v\d\/(h\d\/vip|vip|user)\/ requires-body=1, script-path=https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/MeiTuXiuXiu.js
+# ✅ 克拉壁纸
+http-response ^https:\/\/claritywallpaper\.com\/clarity\/api\/(userInfo|special\/queryByCatalogAll) requires-body=1, script-path=https://ocd0522.tk/ddgksf2013/Cuttlefish/raw/branch/master/Crack/clarity.js
+# ✅ Picsart
+http-response ^https?:\/\/api\.meiease\.cn\/shop\/subscription\/validate requires-body=1, script-path=https://ocd0522.tk/ddgksf2013/Cuttlefish/raw/branch/master/Crack/picsart.js
+
+
+#>>>>>>>>>>>>>>>>工具类VIP
+# ✅ TopWidgets
+http-response ^https?:\/\/.*xiaozujian\.com\/api\/app\/config\/userConfig requires-body=1, script-path=https://ocd0522.tk/ddgksf2013/Cuttlefish/raw/branch/master/Crack/topwidgets.js
+# ✅ Notability
+http-response ^https://notability.com/subscriptions requires-body=1, script-path=https://ocd0522.tk/ddgksf2013/Cuttlefish/raw/branch/master/Crack/notability.js
+# ✅ 百度网盘(倍速)
+http-response ^https:\/\/pan\.baidu\.com\/rest\/\d\.\d\/membership\/user requires-body=1, script-path=https://ocd0522.tk/ddgksf2013/Cuttlefish/raw/branch/master/Crack/bdcloud.js
+# ✅ WPS(国区)
+http-response ^https?:\/\/[a-z-]*account\.wps\.c(n|om)(:\d+|)\/api\/users requires-body=1, script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Wps.js
+# ✅ Nicegram
+http-response^https?:\/\/restore-access\.indream\.app\/restoreAccess\?id=\d{5,10} requires-body=1, script-path=https://ocd0522.tk/ddgksf2013/Cuttlefish/raw/branch/master/Crack/nicegram_body.js
+# ✅ Appraven(美化)
+http-response ^https?:\/\/appraven\.net\/AppRaven\/(app|social|buy) requires-body=1, script-path=https://ocd0522.tk/ddgksf2013/Cuttlefish/raw/branch/master/Crack/appraven.js
+# ✅ 扫描全能王
+http-response ^https:\/\/(api|api-cs)\.intsig\.net\/purchase\/cs\/query_property\? requires-body=1, script-path=https://ocd0522.tk/ddgksf2013/Cuttlefish/raw/branch/master/Crack/camscanner.js
+
+
+
+[MITM]
+hostname = *xiaozujian, lchttpapi.xczim.com, app.yiyan.art, *kuwo*, *lrts*, gateway.caixin.com, notability.com, pan.baidu.com, spclient.wg.spotify.com, *wps*, ticktick.com, ap*.intsig.net, ipadcms.caixin.com, server.yoyiapp.com, *.aoscdn.com, *.xiuxiu.meitu.com, claritywallpaper.com, api.meiease.cn, restore-access.indream.app, appraven.net

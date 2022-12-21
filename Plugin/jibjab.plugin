@@ -1,0 +1,11 @@
+#!name=JibJab
+#!desc=JibJab解锁会员
+#!homepage=https://github.com/KringFeng
+#!author=NobyDa
+#!icon=https://raw.githubusercontent.com/KringFeng/Loon/Master/icons/jibjab.png
+
+[Script]
+http-response https:\/\/origin-prod-phoenix\.jibjab\.com\/v1\/user requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/jibjab.js
+
+[MITM]
+hostname = origin-prod-phoenix.jibjab.com

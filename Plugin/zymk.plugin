@@ -1,0 +1,11 @@
+#!name=知音漫客
+#!desc=解锁VIP+付费内容
+#!homepage=https://github.com/KringFeng
+#!author=彭于晏💞89996462
+#!icon=https://raw.githubusercontent.com/KringFeng/Loon/Master/icons/zymk.png
+
+[Script]
+http-response ^https:\/\/apigate\.zymk\.cn requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/zymk.js
+
+[MITM]
+hostname = apigate.zymk.cn

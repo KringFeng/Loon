@@ -1,0 +1,11 @@
+#!name=Darkroom
+#!desc=Darkroom解锁会员 进去app恢复购买
+#!homepage=https://github.com/deezertidal
+#!author=彭于晏💞89996462
+#!icon=https://raw.githubusercontent.com/KringFeng/Loon/master/icons/darkroom.png
+
+[Script]
+http-response ^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/\$RCAnonymousID%3A\w{32})$ requires-body=1, script-path=https://raw.githubusercontent.com/Marol62926/MarScrpt/main/darkroom.js
+
+[MITM]
+hostname = api.revenuecat.com

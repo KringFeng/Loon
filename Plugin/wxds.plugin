@@ -1,0 +1,11 @@
+#!name=微信读书
+#!desc=微信读书无限卡解锁 version:6.0.1/5.4.3
+#!homepage=https://github.com/KringFeng
+#!author=彭于晏💞89996462
+#!icon=https://raw.githubusercontent.com/KringFeng/Loon/Master/icons/icons/wechatread.png
+
+[Script]
+http-response ^https:\/\/i\.weread\.qq\.com\/pay\/memberCardSummary requires-body=1,script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/txwxds.js
+
+[MITM] 
+hostname=i.weread.qq.com

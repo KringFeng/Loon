@@ -1,0 +1,12 @@
+#!name=AI换脸秀
+#!desc=AI换脸秀会员解锁
+#!homepage=https://github.com/KringFeng/Loon
+#!author=彭于晏💞89996462
+#!icon=https://raw.githubusercontent.com/KringFeng/Loon/Master/icons/icons/ai.png
+
+[Script]
+http-response ^https:\/\/changeclothes\.szsszykj\.com\/interface\/GetIosVip.php requires-body=1,script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/aihlx.js
+
+
+[MITM]
+hostname = changeclothes.szsszykj.com

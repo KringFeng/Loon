@@ -1,0 +1,10 @@
+#!name=Ego Reader
+#!desc=解锁会员
+#!author=彭于晏💞89996462
+#!icon=https://raw.githubusercontent.com/KringFeng/Loon/Master/icons/ego.png
+
+[Script]
+http-response ^https?:\/\/api\.pxmage\.com\/egoreader\/user\/info requires-body=1,script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/ego.js
+
+[MITM]
+hostname = api.pxmage.com

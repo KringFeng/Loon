@@ -1,0 +1,11 @@
+#!name=有道云笔记
+#!desc=有道云笔记VIP
+#!homepage=https://github.com/KringFeng
+#!author=Alex0510
+#!icon=https://raw.githubusercontent.com/KringFeng/Loon/master/icons/ydybj.png
+
+
+[Script]
+http-response https://note.youdao.com/yws/(mapi/payment|api/self) requires-body=1 ,script-path=https://raw.githubusercontent.com/demo2099/jscool/master/Script/ydybj.js
+[MITM]
+hostname = note.youdao.com

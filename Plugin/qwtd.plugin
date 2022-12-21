@@ -1,0 +1,11 @@
+#!name=青蛙Todo
+#!desc=解锁VIP
+#!homepage=https://github.com/KringFeng
+#!author=彭于晏💞89996462
+#!icon=https://raw.githubusercontent.com/KringFeng/Loon/Master/icons/qwtd.png
+
+[Script]
+http-response ^https:\/\/frogtodo\.shuge888\.com:33333\/account\/refreshState  requires-body=1, script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/qwtodo.js
+
+[MITM]
+hostname = frogtodo.shuge888.com

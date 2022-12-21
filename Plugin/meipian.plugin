@@ -1,0 +1,12 @@
+#!name=美篇
+#!desc=美篇解锁vip
+#!homepage=https://github.com/KringFeng
+#!author=litieyin
+#!icon=https://raw.githubusercontent.com/KringFeng/Loon/Master/icons/meipian.png
+
+
+[MITM]
+hostname=poster.meipian.cn
+
+[Script]
+http-response ^https:\//poster.meipian.cn\/5.3\/user\/info requires-body=1,script-path=https://raw.githubusercontent.com/litieyin/AD_VIP/main/Script/meipian.js

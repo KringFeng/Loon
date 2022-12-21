@@ -1,0 +1,11 @@
+#!name=幕布-大纲笔记
+#!desc=解锁会员
+#!homepage=https://github.com/KringFeng
+#!author=彭于晏💞89996462
+#!icon=https://raw.githubusercontent.com/KringFeng/Loon/Master/icons/mubu.png
+
+[Script]
+http-response ^https:\/\/api2.mubu.com\/v3\/api\/user/* requires-body=1, script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/mubu.js
+
+[MITM]
+hostname = api2.mubu.com

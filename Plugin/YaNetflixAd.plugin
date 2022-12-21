@@ -1,0 +1,22 @@
+#!name=鸭奈飞
+#!desc=鸭奈飞去广告
+#!homepage=https://github.com/KringFeng
+#!author=Alex0510
+#!icon=https://raw.githubusercontent.com/KringFeng/Loon/Master/icons/Mickey.png
+
+[Script]
+http-response ^http://pipi.4kya.com//xgapp.php/v3/advert requires-body=1, script-path=https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/yanetflix.js
+
+[MITM]
+hostname = pipi.4kya.com
+
+
+let obj = JSON.parse($response.body);
+
+obj = {
+  "msg": "广告列表",
+  "data": [
+  ],
+  "code": 1
+}
+$done({body: JSON.stringify(obj)});

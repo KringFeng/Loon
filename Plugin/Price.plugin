@@ -1,0 +1,12 @@
+#!name=Price
+#!desc=京东比价
+#!homepage=https://github.com/KringFeng
+#!author=Tartarus2014
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/price.png
+
+
+[Script]
+http-response ^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig) requires-body=1, script-path=https://raw.githubusercontent.com/githubdulong/Script/master/jd_tb_price.js,tag=京东比价
+
+[MITM]
+hostname = api.m.jd.com

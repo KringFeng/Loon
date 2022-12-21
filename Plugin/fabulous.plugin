@@ -1,0 +1,11 @@
+#!name=Fabulous
+#!desc=Fabulous会员解锁
+#!homepage=https://github.com/KringFeng
+#!author=Marol62926
+#!icon=https://raw.githubusercontent.com/KringFeng/Loon/Master/icons/fabulous.png
+
+[Script]
+http-response https://buy.itunes.apple.com/verifyReceipt script-path=https://raw.githubusercontent.com/Marol62926/MarScrpt/main/fabulous.js,requires-body=1,max-size=0
+
+[MITM]
+hostname = buy.itunes.apple.com

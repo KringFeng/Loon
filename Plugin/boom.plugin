@@ -1,0 +1,11 @@
+#!name=Boom
+#!desc=BOOM会员解锁
+#!homepage=https://github.com/KringFeng
+#!author=ddgksf2013
+#!icon=https://raw.githubusercontent.com/KringFeng/Loon/Master/icons/boom.png
+
+[Script]
+http-response ^https:\/\/apimboom2\.globaldelight\.net\/itunesreceipt_v2\.php$ requires-body=1,script-path=Https://raw.githubusercontent.com/KringFeng/Loon/Master/js-backup/Crack/boom.js
+
+[MITM]
+hostname=apimboom2.globaldelight.net

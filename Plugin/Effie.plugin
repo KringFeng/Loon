@@ -1,0 +1,12 @@
+#!name=Effie
+#!desc=沉浸写作——解锁订阅
+#!homepage=https://github.com/KringFeng/Loon
+#!author=Eric💞89996462
+#!icon=https://raw.githubusercontent.com/KringFeng/Loon/Master/icons/Effie.png
+
+
+[Script]
+http-response ^https://api.effie.(co|pro)/api/v1/user/member requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/effie.js
+
+[MITM]
+hostname = api.effie.pro,api.effie.co

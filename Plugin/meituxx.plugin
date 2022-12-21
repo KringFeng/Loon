@@ -1,0 +1,11 @@
+#!name=美图秀秀VIP
+#!desc=美图秀秀解锁
+#!homepage=https://github.com/KringFeng
+#!author=彭于晏💞89996462
+#!icon=https://raw.githubusercontent.com/KringFeng/Loon/Master/icons/meituxx.png
+
+[Script]
+http-response ^https:\/\/api\.xiuxiu\.meitu\.com\/v1 requires-body=1,script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/mtxx.js
+
+[MITM]
+hostname= api.xiuxiu.meitu.com, h5.xiuxiu.meitu.com

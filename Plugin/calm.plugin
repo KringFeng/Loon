@@ -1,0 +1,12 @@
+#!name=Calm
+#!desc=Calm解锁限制
+#!homepage=https://github.com/KringFeng
+#!author=lutqhysky
+#!icon=https://raw.githubusercontent.com/KringFeng/Loon/Master/icons/calm.png
+
+
+[MITM]
+hostname=api.calm.com
+
+[Script]
+http-response https://api.calm.com/(me|device|ios/receipt) requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Alex0510/Eric/Alex0510/surge/surge/Script/caml.js

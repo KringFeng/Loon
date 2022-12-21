@@ -1,0 +1,16 @@
+#!name=过期啦
+#!desc=—解锁VIP
+#!homepage=https://github.com/KringFeng
+#!author=彭于晏💞89996462
+#!icon=https://raw.githubusercontent.com/KringFeng/Loon/Master/icons/gql.png
+
+[Script]
+http-response ^https:\/\/expire\.vanemu\.com\/1\.1\/functions\/getUserInfo requires-body=1, script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/gql.js
+
+[MITM]
+hostname = expire.vanemu.com
+
+
+body = $response.body.replace(/\"user_is_pro":\w+/g, '\"user_is_pro":true').replace(/\"group_is_pro":\w+/g, '\"group_is_pro":true')
+
+$done({body});

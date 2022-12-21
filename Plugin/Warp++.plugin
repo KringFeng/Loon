@@ -1,0 +1,15 @@
+#!name=Warp++
+#!desc=WARP++ 刷邀请推荐奖励
+#!homepage=https://github.com/KringFeng
+#!author=System
+#!icon=https://raw.githubusercontent.com/KringFeng/Loon/Master/icons/SSID_1.png
+
+[Host]
+api.cloudflareclient.com = server: 1.1.1.1
+
+[Script]
+http-request ^https:\/\/api\.cloudflareclient\.com\/.+\/reg\/[0-9a-f]{8}-[0-9a-f]{4}-[0-5][0-9a-f]{3}-[089ab][0-9a-f]{3}-[0-9a-f]{12}$,max-size=0,debug=1,script-path=https://raw.githubusercontent.com/githubdulong/Script/master/warp%2B%2Breferrer.js,tag=Warp++referrer
+cron "*/30 * * * * *" timeout=15,script-path=https://raw.githubusercontent.com/githubdulong/Script/master/warp%2B%2B.js,timeout=15,wake-system=1,,tag=Warp++ 
+
+[MITM]
+hostname= api.cloudflareclient.com

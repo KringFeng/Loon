@@ -1,0 +1,11 @@
+#!name=万能变声器
+#!desc=万能变声器解锁
+#!homepage=https://github.com/KringFeng
+#!author=彭于晏💞89996462
+#!icon=https://raw.githubusercontent.com/KringFeng/Loon/Master/icons/icons/wnbsq.png
+
+[Script]
+http-response ^https:\/\/www\.40sishi\.com\/voice\/user\/profile requires-body=1, script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/wnbsq.js
+
+[MITM]
+hostname = *.40sishi.com

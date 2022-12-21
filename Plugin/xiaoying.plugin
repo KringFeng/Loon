@@ -1,0 +1,11 @@
+#!name=小影
+#!desc=小影解锁
+#!homepage=https://github.com/KringFeng
+#!author=彭于晏💞89996462
+#!icon=https://raw.githubusercontent.com/KringFeng/Loon/Master/icons/icons/xiaoying.png
+
+[Script]
+http-response ^https:\/\/(xy-viva\.kakalili|api-chn.rthdo)\.com\/api\/rest\/u\/vipVerifyReceipt requires-body=1, script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/xiaoyin.js
+
+[MITM]
+hostname = xy-viva.kakalili.com, api-chn.rthdo.com

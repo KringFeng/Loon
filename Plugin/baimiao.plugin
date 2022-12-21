@@ -1,0 +1,11 @@
+#!name=白描
+#!desc=白描黄金会员
+#!homepage=https://github.com/KringFeng/Loon
+#!author= 彭于晏💞89996462
+#!icon=https://raw.githubusercontent.com/KringFeng/Loon/Master/icons/baimiao.png
+
+[Script]
+http-response ^https?:\/\/baimiao\.uzero\.cn\/api\/v\d\.user\/appLaunchWithUser$ requires-body=1,script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/baimiao.js
+
+[MITM]
+hostname = baimiao.uzero.cn

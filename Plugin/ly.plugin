@@ -1,0 +1,12 @@
+#!name=来音智能陪练
+#!desc=来音智能陪练解锁
+#!homepage=https://github.com/KringFeng
+#!author=彭于晏💞89996462
+#!icon=https://raw.githubusercontent.com/KringFeng/Loon/Master/icons/ly.png
+
+
+[Script]
+http-response ^https:\/\/partner-ai-api\.quthing\.com\/ai\/vip\/state requires-body=1,script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/ly.js
+
+[MITM]
+hostname = partner-ai-api.quthing.com

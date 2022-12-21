@@ -1,0 +1,11 @@
+#!name=Xmind
+#!desc=思维导图解锁订阅
+#!homepage=https://github.com/KringFeng
+#!author=彭于晏💞89996462
+#!icon=https://raw.githubusercontent.com/KringFeng/Loon/Master/icons/xmind.png
+
+[Script]
+http-response ^https:\/\/www\.xmind\.cn\/_res\/devices requires-body=1, script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/xmind.js, tag=Xmind思维导图
+
+[MITM]
+hostname = www.xmind.cn, www.xmind.net,www.xmind.app

@@ -1,0 +1,19 @@
+#!name=奥软抠图
+#!desc=专业图片+解锁VIP
+#!homepage=https://github.com/KringFeng
+#!author=彭于晏💞89996462
+#!icon=https://raw.githubusercontent.com/KringFeng/Loon/Master/icons/arqt.png
+
+[Script]
+http-response ^https:\/\/awvp\.aoscdn\.com\/base\/vip\/client\/authorizations requires-body=1, script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/arqt.js
+
+[MITM]
+hostname = awvp.aoscdn.com
+
+var body = $response.body;
+var objk = JSON.parse(body);
+
+objk = {"status":200,"message":"success","data":{"license_type":"free","period_type":"trial","is_activated":1,"remain_days":0,"will_expire":1,"allowed_device_count":1,"begin_activated_time":1662783235,"durations":0,"vip_special":0,"has_buy_extend":0,"has_present":0,"product_id":369,"is_lifetime":0,"expired_at":0,"expire_time":"9999-01-01 00:00:00","candy":0,"candy_expired_at":0,"device_id":2700581012,"exist_trial":0}}
+body = JSON.stringify(objk);
+
+$done({body});

@@ -1,0 +1,13 @@
+#!name=Ten Percent
+#!desc=Ten Percent解锁
+#!homepage=https://github.com/KringFeng
+#!author=Marol62926
+#!icon=https://raw.githubusercontent.com/KringFeng/Loon/Master/icons/tenpercent.png
+
+[Script]
+http-response https://api.changecollective.com/api/v3/user script-path=https://raw.githubusercontent.com/Marol62926/MarScrpt/main/tenPercent.js,requires-body=1,max-size=0
+
+[MITM]
+hostname = api.changecollective.com
+
+

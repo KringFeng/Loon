@@ -1,0 +1,11 @@
+#!name=读书笔记
+#!desc=读书笔记解锁会员
+#!homepage=https://github.com/KringFeng
+#!author=ddgksf2013
+#!icon=https://raw.githubusercontent.com/KringFeng/Loonm/master/icons/dsbj.png
+
+[Script]
+http-response https://xrckeji.com/union/app/user/query requires-body=1,script-path=Https://raw.githubusercontent.com/KringFeng/Loon/Master/js-backup/Crack/mzjz.js
+
+[MITM]
+hostname=xrckeji.com

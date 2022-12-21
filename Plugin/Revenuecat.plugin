@@ -1,0 +1,14 @@
+#!name=RevenueCat多合一脚本
+#!desc=Pixelmator、Planny、Gear、图图记账、Aphrodite、Apollo、MoneyThings、目标地图、Audiomack、
+1Blocker、Scanner Pro、Darkroom、谜底时钟、Pillow、VSCO、Grow、WhiteCloud、Fin、奇妙组件、
+Widgetsmith、vision、Percento、Airmail、Usage、pdfviewer、Spark、谜底黑胶、ColorWidgets、
+手机硬件管家、WidgetArt、卡片馆
+#!homepage=https://github.com/KringFeng
+#!author=ddgksf2021
+#!icon=https://raw.githubusercontent.com/KringFeng/Loon/Master/icons/RevenueCat.png
+
+[Script]
+http-response ^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/*) requires-body=1, script-path=https://ocd0522.tk/ddgksf2013/Cuttlefish/raw/branch/master/Crack/revenuecat.js
+
+[MITM]
+hostname = api.revenuecat.com

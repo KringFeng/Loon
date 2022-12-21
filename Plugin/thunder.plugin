@@ -1,0 +1,13 @@
+#!name=迅雷
+#!desc=迅雷会员解锁
+#!homepage=https://github.com/KringFeng
+#!author=彭于晏💞89996462
+#!icon=https://raw.githubusercontent.com/KringFeng/Loon/Master/icons/thunder.png
+
+[Script]
+http-response ^https://xluser-ssl.xunlei.com/xluser.core.login/v3/getuserinfo requires-body=1, script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/xunlei.js
+
+[MITM]
+hostname = xluser-ssl.xunlei.com
+
+

@@ -1,0 +1,12 @@
+#!name=网易蜗牛读书
+#!desc=网易蜗牛读书解锁会员
+#!homepage=https://github.com/KringFeng
+#!author=yxiaocai & JO2EY
+#!icon=https://raw.githubusercontent.com/KringFeng/Loon/Master/icons/wnds.png
+
+
+[MITM]
+hostname=p.du.163.com
+[Script]
+
+http-response ^https?:\/\/p\.du\.163\.com\/gain\/readtime\/info\.json requires-body=1 ,script-path=https://raw.githubusercontent.com/KringFeng/Loon/Master/Plugin/wnds.js

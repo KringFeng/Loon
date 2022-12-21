@@ -1,0 +1,12 @@
+#!name=Notability Plus
+#!desc=Notability解锁
+#!homepage=https://github.com/KringFeng
+#!author=litieyin
+#!icon=https://raw.githubusercontent.com/KringFeng/Loon/Master/icons/notability.png
+
+
+[MITM]
+hostname=notability.com
+
+[Script]
+http-response ^https://notability.com/subscriptions requires-body=1,script-path=https://raw.githubusercontent.com/litieyin/AD_VIP/main/Script/notability.js

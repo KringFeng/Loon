@@ -1,0 +1,12 @@
+#!name=CEO周课
+#!desc=CEO周课解锁
+#!homepage=https://github.com/KringFeng
+#!author=彭于晏💞89996462
+#!icon=https://raw.githubusercontent.com/KringFeng/Loon/Master/icons/ceo.png
+
+
+[Script]
+http-response ^https:\/\/user\.xiaozaoapp\.com\/app\/ceouser\/loginAuto requires-body=1,script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/ceo.js
+
+[MITM]
+hostname = user.xiaozaoapp.com

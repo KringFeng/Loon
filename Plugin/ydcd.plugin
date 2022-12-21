@@ -1,0 +1,11 @@
+#!name=有道词典
+#!desc=有道词典会员解锁
+#!homepage=https://github.com/KringFeng
+#!author=彭于晏💞89996462
+#!icon=https://raw.githubusercontent.com/KringFeng/Loon/Master/icons/ydcd.png
+
+[Script]
+http-response ^https:\/\/dict\.youdao\.com\/vip\/user\/status requires-body=1,script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/wyydcd.js
+
+[MITM]
+hostname = dict.youdao.com

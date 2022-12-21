@@ -1,0 +1,11 @@
+#!name=电子请柬制作
+#!desc=电子请柬制作解锁会员
+#!homepage=https://github.com/KringFeng
+#!author=彭于晏💞89996462
+#!icon=https://raw.githubusercontent.com/KringFeng/Loon/Master/icons/dzqj.png
+
+[Script]
+http-response ^https:\/\/cn\.invit\.vip\/users\/info requires-body=1,script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/dzqjzz.js
+
+[MITM] 
+hostname = cn.invit.vip

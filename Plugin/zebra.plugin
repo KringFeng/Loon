@@ -1,0 +1,11 @@
+#!name=斑马海报
+#!desc=解锁终身会员
+#!homepage=https://github.com/KringFeng
+#!author=彭于晏💞89996462
+#!icon=https://raw.githubusercontent.com/KringFeng/Loon/Master/icons/zebra.png
+
+[Script]
+http-response ^https:\/\/zebra\.maka\.im\/api\/user\/info requires-body=1,script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/bmhb.js
+
+[MITM]
+hostname = zebra.maka.im

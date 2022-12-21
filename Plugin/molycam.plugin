@@ -1,0 +1,9 @@
+#!name=Molycam
+#!desc=Molycam会员解锁
+#!homepage=https://github.com/KringFeng
+#!author=墨鱼@ddgksf2013
+#!icon=https://raw.githubusercontent.com/KringFeng/Loon/Master/icons/molycam.png
+[Script]
+http-response https:\/\/pay\.wecut\.com\/apple\/(iosVerifyReceipt|iosAppVerifyReceipt)\.php requires-body=1,script-path=https://ocd0522.tk/ddgksf2013/Cuttlefish/raw/branch/master/Crack/mv.js
+[MITM]
+hostname=pay.wecut.com

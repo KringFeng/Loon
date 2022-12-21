@@ -1,0 +1,11 @@
+#!name=阿布睡前故事
+#!desc=阿布睡前故事解锁会员
+#!homepage=https://github.com/KringFeng/Loon
+#!author=彭于晏💞89996462
+#!icon=https://raw.githubusercontent.com/KringFeng/Loon/Master/icons/absqgs.png
+
+[Script]
+http-response http:\/\/tutugushiapi\.tutuerge\.com requires-body=1,script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/abushuiqiangushi.js
+
+[MITM]
+hostname = tutugushiapi.tutuerge.com

@@ -1,0 +1,12 @@
+#!name=WPS稻壳会员
+#!desc=稻壳会员解锁
+#!homepage=https://github.com/KringFeng
+#!author= yqc007
+#!icon=https://raw.githubusercontent.com/KringFeng/Loon/master/icons/doc.png
+
+[Script]
+http-response ^https?:\/\/account\.wps\.cn\/api\/v3\/mine\/vips requires-body=1,script-path=https://raw.githubusercontent.com/yqc007/QuantumultX/master/WPSDocerVIPuserCrack.js
+http-request ^https?:\/\/.+\.(docer.)?wps.cn\/(user\/v1\/vip|android\/mb\/buy|download\/v1\/ios|partner\/invoke\/usable|(api|rank)\/v1(\/mobile\/mb)?\/detail) requires-body=0,script-path=https://raw.githubusercontent.com/yqc007/QuantumultX/master/WPSDocerVIPowerCrack.js
+
+[MITM]
+hostname = *.docer.wps.cn,vipapi.wps.cn,account.wps.cn

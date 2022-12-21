@@ -1,0 +1,11 @@
+#!name=布丁锁屏
+#!desc=布丁锁屏 VIP
+#!homepage=https://github.com/KringFeng
+#!author=墨鱼ddgksf2013
+#!icon=https://raw.githubusercontent.com/KringFeng/Loon/Master/icons/bdsp.png
+
+[Script]
+http-response https?:\/\/screen-lock\.51wnl-cq\.com\/userApi\/saveUser requires-body=1,script-path=Https://raw.githubusercontent.com/KringFeng/Loon/Master/js-backup/Crack/budingsuoping.js
+
+[MITM]
+hostname = screen-lock.51wnl-cq.com

@@ -1,0 +1,11 @@
+#!name=图图记账
+#!desc=恢复订阅
+#!homepage=https://github.com/kringFeng
+#!author=彭于晏💞89996462
+#!icon=https://raw.githubusercontent.com/KringFeng/Loon/Master/icons/tutu.png
+
+[Script]
+http-response ^https:\/\/api\.revenuecat\.com\/v1\/subscribers.+ requires-body=1, script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/ttjz.js, tag=图图记账解锁永久高级版
+
+[MITM]
+hostname=api.revenuecat.com

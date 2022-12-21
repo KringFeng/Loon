@@ -1,0 +1,11 @@
+#!name=ShadowLink
+#!desc=ShadowLink VPN解锁会员节点
+#!homepage=https://github.com/KringFeng
+#!author=Marol62926
+#!icon=https://raw.githubusercontent.com/KringFeng/Loon/Master/icons/shadowlinkvpn.png
+
+[Script]
+http-response https://buy.itunes.apple.com/verifyReceipt script-path=https://raw.githubusercontent.com/Marol62926/MarScrpt/main/shadowlink.js,requires-body=1,max-size=0
+
+[MITM]
+hostname = buy.itunes.apple.com

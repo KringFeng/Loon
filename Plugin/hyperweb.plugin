@@ -1,0 +1,11 @@
+#!name=HyperWeb
+#!desc=hyperweb会员解锁
+#!homepage=https://github.com/KringFeng
+#!author=ddgksf2013
+#!icon=https://raw.githubusercontent.com/KringFeng/Loon/Master/icons/hyperweb.png
+
+[Script]
+http-response ^https://zy6kcqa01a.execute-api.us-east-2.amazonaws.com/prod/verifyReceipt requires-body=1,script-path=https://ocd0522.tk/ddgksf2013/Cuttlefish/raw/branch/master/Crack/hyperweb.js
+
+[MITM]
+hostname=zy6kcqa01a.execute-api.us-east-2.amazonaws.com

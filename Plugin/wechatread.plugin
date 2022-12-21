@@ -1,0 +1,12 @@
+#!name=微信自动阅读
+#!desc=微信自动阅读积分兑换
+#!homepage=https://github.com/KringFeng
+#!author=彭于晏💞89996462
+#!icon=https://raw.githubusercontent.com/KringFeng/Loon/Master/icons/WeChat.png/wechatread.png
+
+
+[Script]
+^http-response ^https?://mp\.weixin\.qq\.com/s\?.*  requires-body=1,script-path=Https://raw.githubusercontent.com/KringFeng/Loon/Master/js-backup/Script/wechat_auto_read.js
+
+[MITM]
+hostname = mp.weixin.qq.com

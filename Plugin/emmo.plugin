@@ -1,0 +1,11 @@
+#!name=Emmo
+#!desc=Emmo解锁会员
+#!homepage=https://github.com/KringFeng
+#!author=ddgksf2013
+#!icon=https://raw.githubusercontent.com/KringFeng/Loon/master/icons/emmo.png
+
+[Script]
+http-response ^http://106.54.2.168/emmoDiary/user/getUser requires-body=1,script-path=https://ocd0522.tk/ddgksf2013/Cuttlefish/raw/branch/master/Crack/emmo.js
+
+[MITM]
+hostname=106.54.2.168

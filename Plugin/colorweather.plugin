@@ -1,0 +1,14 @@
+#!name=彩云天气SVIP
+#!desc=彩云天气会员解锁
+#!homepage=https://github.com/KringFeng
+#!author= ddgksf2013
+#!icon=https://raw.githubusercontent.com/KringFeng/Loon/Master/icons/caiyun.png
+
+[Script]
+http-response https?:\/\/biz\.caiyunapp\.com\/(membership_rights|v2\/user) requires-body=1,script-path=https://ocd0522.tk/ddgksf2013/Cuttlefish/raw/branch/master/Crack/caiyun.js
+
+[URL Rewrite]
+^https:\/\/ad\.caiyunapp\.com\/ reject
+
+[MITM]
+hostname=biz.caiyunapp.com,ad.caiyunapp.com

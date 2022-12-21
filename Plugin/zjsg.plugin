@@ -1,0 +1,11 @@
+#!name=指尖时光
+#!desc=指尖时光解锁会员
+#!homepage=https://github.com/KringFeng
+#!author=彭于晏💞89996462
+#!icon=https://raw.githubusercontent.com/KringFeng/Loon/Master/icons/zjsg.png
+
+[Script]
+http-response ^https://integral.dasyibalang.com/User requires-body=1, script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/zjsg.js,
+
+[MITM]
+hostname = integral.dasyibalang.com

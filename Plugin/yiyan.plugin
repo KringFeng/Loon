@@ -1,0 +1,11 @@
+#!name=一言
+#!desc=一言解锁会员
+#!homepage=https://github.com/KringFeng
+#!author=墨鱼ddgksf2013
+#!icon=https://raw.githubusercontent.com/KringFeng/Loon/Master/icons/yiyan.png
+
+[Script]
+http-response ^https:\/\/app\.yiyan\.art\/yiyan\/ requires-body=1,script-path=https://ocd0522.tk/ddgksf2013/Cuttlefish/raw/branch/master/Crack/yiyan.js
+
+[MITM]
+hostname=app.yiyan.art

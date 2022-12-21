@@ -1,0 +1,11 @@
+#!name=Lingokids
+#!desc=Lingokids解锁会员
+#!homepage=https://github.com/KringFeng
+#!author=彭于晏💞89996462
+#!icon=https://raw.githubusercontent.com/KringFeng/Loon/Master/icons/lingokids.png
+
+[Script]
+http-response ^https:\/\/api\.lingokids\.com\/v1\/renovate_session requires-body=1,script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/Lingokids.js
+
+[MITM]
+hostname = api.lingokids.com

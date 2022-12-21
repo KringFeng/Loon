@@ -1,0 +1,11 @@
+#!name=Cubox
+#!desc=Cubox解锁
+#!homepage=https://github.com/KringFeng
+#!author=彭于晏💞89996462
+#!icon=https://raw.githubusercontent.com/KringFeng/Loon/Master/icons/cubox.png
+
+[Script]
+http-response ^https:\/\/cubox\.pro\/c\/api\/userInfo requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/cubox.js
+
+[MITM]
+hostname = cubox.pro
