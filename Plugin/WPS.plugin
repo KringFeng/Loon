@@ -1,12 +1,14 @@
 #!name=WPS会员
 #!desc=WPS解锁本地会员
 #!homepage=https://github.com/KringFeng
-#!author=彭于晏💞89996462
+#!author=510004015
 #!icon=https://raw.githubusercontent.com/KringFeng/Loon/Master/icons/wps.png
 
 
 [Script]
-http-response ^https?:\/\/account\.wps\.cn\/api\/users requires-body=true, script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/wps.js, tag=WPS会员
+
+http-response ^https:\/\/(vas|account)\.wps\.cn\/(query\/api\/v\d\/list_purchase_info|api\/users\/\d+\/overview) script-path=https://raw.githubusercontent.com/510004015/Quantumult_X/Remote/Premium/WPSOffice.js, requires-body=true, timeout=60 ,tag=WPSOffice_2
 
 [MITM]
-hostname = account.wps.cn,*account.wps.com
+
+hostname = vas.wps.cn,account.wps.cn
