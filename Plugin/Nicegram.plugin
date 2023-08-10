@@ -1,0 +1,13 @@
+#!name=Nicegram会员
+#!desc=解锁Nicegram会员
+#!homepage=https://t.me/chxm1023_Chat
+#!author=Chxm1023
+#!icon=https://raw.githubusercontent.com/KringFeng/Loon/Master/icons/nicegram.png
+
+[Script]
+
+http-response ^https?:\/\/restore-access\.indream\.app\/restoreAccess script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/nicegram.js, requires-body=true, timeout=60 ,tag=nicegram_8
+
+[MITM]
+
+hostname = restore-access.indream.app
